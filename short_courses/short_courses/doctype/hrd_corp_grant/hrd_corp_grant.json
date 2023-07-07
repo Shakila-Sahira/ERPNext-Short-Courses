@@ -1,0 +1,157 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2023-06-08 14:55:53.621729",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "customer_name",
+  "item_code",
+  "course_name",
+  "column_break2",
+  "section_break",
+  "instructor",
+  "instructor_name",
+  "department",
+  "ttt_cert_no",
+  "column_break",
+  "trainer_profile",
+  "ttt_certificate",
+  "claim_submission",
+  "jd14_form",
+  "t3_attendance",
+  "column_break1",
+  "invoice"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company Name",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "course_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Course Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break",
+   "fieldtype": "Section Break",
+   "label": "Trainer"
+  },
+  {
+   "fieldname": "instructor",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Trainer",
+   "options": "Instructor"
+  },
+  {
+   "fetch_from": "instructor.Instructor_name",
+   "fieldname": "instructor_name",
+   "fieldtype": "Read Only",
+   "label": "Trainer Name"
+  },
+  {
+   "fetch_from": "instructor.department",
+   "fieldname": "department",
+   "fieldtype": "Read Only",
+   "label": "Trainer Department"
+  },
+  {
+   "fetch_from": "instructor.ttt_cert_no",
+   "fieldname": "ttt_cert_no",
+   "fieldtype": "Read Only",
+   "label": "TTT Certificate"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "trainer_profile",
+   "fieldtype": "Attach",
+   "label": "Trainer Profile"
+  },
+  {
+   "fieldname": "ttt_certificate",
+   "fieldtype": "Attach",
+   "label": "Trainer TTT Certificate"
+  },
+  {
+   "fieldname": "claim_submission",
+   "fieldtype": "Section Break",
+   "label": "Claim Submission"
+  },
+  {
+   "fieldname": "jd14_form",
+   "fieldtype": "Attach",
+   "label": "JD14 Form"
+  },
+  {
+   "fieldname": "t3_attendance",
+   "fieldtype": "Attach",
+   "label": "T3 Attendance"
+  },
+  {
+   "fieldname": "invoice",
+   "fieldtype": "Attach",
+   "label": "HRD Corp Grant Invoice"
+  },
+  {
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Grant ID",
+   "options": "HRD-.YYYY.-"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Course ID",
+   "options": "Item",
+   "reqd": 1
+  }
+ ],
+ "modified": "2023-07-07 11:15:37.665924",
+ "modified_by": "Administrator",
+ "module": "Short Courses",
+ "name": "HRD Corp Grant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

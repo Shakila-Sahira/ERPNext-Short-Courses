@@ -1,0 +1,99 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2023-06-08 15:04:05.867494",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "instructor",
+  "naming_series",
+  "section_break1",
+  "instructor_availability",
+  "unavailable_date_from",
+  "unavailable_date_to",
+  "column_break1",
+  "section_break2",
+  "title",
+  "trainer_reasons"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming",
+   "options": "TR-SCH-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "trainer_reasons",
+   "fieldtype": "Long Text",
+   "label": "Reasons"
+  },
+  {
+   "fieldname": "instructor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Instructor",
+   "options": "Instructor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "instructor_availability",
+   "fieldtype": "Select",
+   "label": "Instructor Availability",
+   "options": "Available\nUnavailable",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unavailable_date_from",
+   "fieldtype": "Date",
+   "label": "Unavailable Date From",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unavailable_date_to",
+   "fieldtype": "Date",
+   "label": "Unavailable Date To",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break2",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2023-07-06 00:42:31.064850",
+ "modified_by": "Administrator",
+ "module": "Short Courses",
+ "name": "Trainer Schedule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
